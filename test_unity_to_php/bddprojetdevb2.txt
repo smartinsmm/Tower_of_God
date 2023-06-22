@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS Partie
+(
+    identifiant_de_session INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    mode_de_jeu VARCHAR(80) NOT NULL,
+    options_de_personnalisation INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Joueur
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom_utilisateur VARCHAR(80) NOT NULL,
+    email VARCHAR(80) NOT NULL,
+    date_de_naissance VARCHAR(80) NOT NULL,
+    id_session INT,
+    FOREIGN KEY (id_session) REFERENCES Partie(identifiant_de_session)
+);
+
+CREATE TABLE IF NOT EXISTS Solo
+(
+    progression INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    resultat_score_fin VARCHAR(80) NOT NULL,
+    id_joueur INT NOT NULL,
+    mode_de_jeu VARCHAR(80) NOT NULL,
+    FOREIGN KEY (id_joueur) REFERENCES Joueur(id)
+);

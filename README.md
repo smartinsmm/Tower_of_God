@@ -1,5 +1,7 @@
 # Tower_of_God
 
+Vous retrouverais le rapport du projet dev b2 en pdf.
+
 Création d'un UML sur Draw.io
 
 Cette UML est composé de trois tables User, Session et Adversaire :

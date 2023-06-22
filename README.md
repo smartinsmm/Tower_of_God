@@ -26,7 +26,7 @@ Cette UML est composé de trois tables User, Session et Adversaire :
 
 # Solo
 
-- Progression :
+- Progression : Nombre de round
 
 - Défis ou invitations : Les joueurs peuvent être en mesure de lancer des défis ou d'envoyer des invitations à d'autres joueurs via la table adversaire. Cela permet d'engager des combats directs ou de proposer des compétitions amicales
 
